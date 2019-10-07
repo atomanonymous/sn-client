@@ -194,10 +194,6 @@ const Search: React.FunctionComponent<RouteComponentProps<{ queryData?: string }
                   onChange={ev => setSaveName(ev.currentTarget.value)}
                 />
                 <br />
-                <FormControlLabel
-                  label={localization.public}
-                  control={<Checkbox onChange={ev => setSavePublic(ev.target.checked)} />}
-                />
               </DialogContent>
               <DialogActions>
                 <Button onClick={() => setIsSaveOpened(false)}>{localization.cancel}</Button>
